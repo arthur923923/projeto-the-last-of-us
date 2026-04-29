@@ -1,0 +1,15 @@
+1 bege
+(203,179,156)
+2 preto
+(35,31,26)
+3 marrom
+(84,71,59)
+4 verde
+(98,101,84)
+5 cinza
+(94,91,92)
+
+fontes
+
+T-Jolly Lodger
+P-Shadows Into Light
