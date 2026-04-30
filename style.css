@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Carter+One&family=Jolly+Lodger&family=Oxanium:wght@200..800&display=swap');
 *{/*reset basico*/
     box-sizing: border-box;
     margin: 0%;
@@ -12,12 +12,12 @@ body{
 }
 header{
     background-color: rgb(94,91,92);
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     padding: 17px;/*espacamento interno*/
-    font-size: 35px;
     font-family: "Jolly Lodger", system-ui;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
 }
 nav a{
     color: rgba(239, 243, 227, 0.836);/*muda acor da letra*/
@@ -38,8 +38,36 @@ nav a:hover{
     width: 350px;
     margin: 15px;
     padding: 10px;
-    background-color: rgb(84,71,59);
+    background-color: rgba(114, 99, 84, 0.658);
 }
 .card img{
     width: 100%;
+    border-radius: 10%;
+}
+#personagens h2{/*mudando a fonte do 2 titulo*/
+    font-family: "Carter One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 37px;
+    color: rgb(252, 252, 252);
+}
+#personagens{
+    background-image: url(./imagens/banner.jpg);
+    /*backgroud-size: meche no tamanho do plano de fundo| cover= esticar a imagem| contain = mantem o tamanho original da imagem| backgroud-repeat: tira a repeticao ou coloca a repeticao | no-repeat= impede que a imagem que se repita| backgroud-position: altera a posicao da minha imagem|left,right,center*/
+    background-size: cover;
+}
+.card:hover{
+    transform: translateY(-15px);
+    transition: 0.5s;
+}
+.card-jogos img{
+    width: 400px;
+
+}
+.card-jogos{
+    display: inline-block;
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(114, 99, 84, 0.658);
 }
