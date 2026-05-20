@@ -60,6 +60,19 @@ nav a:hover{
     transform: translateY(-15px);
     transition: 0.5s;
 }
+#jogos h2{
+    font-size: 17vh;
+    margin-top: 30px;
+}
+#jogos{
+    background-image: url(./imagens/banner\ 2.jpg);
+    margin-top: 50px;
+    font-family: "Jolly Lodger", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: aliceblue;
+}
 .card-jogos img{
     width: 400px;
 
@@ -69,5 +82,26 @@ nav a:hover{
     width: 500px;
     margin: 20px;
     padding: 20px;
-    background-color: rgba(114, 99, 84, 0.658);
+    background-color: rgba(114, 99, 84, 0.842);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    border-radius: 20px;
+
+}
+.card-jogos:hover{
+    transform: translateY(-15px);
+    transition: 0.5s;
+}
+footer{
+    background-color: black;
+    color: rgb(135, 138, 141);
+    font-size: 30px;
+    padding-top: 40px;
+    border-top: solid saddlebrown 10px;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    font-size: 40px;
 }

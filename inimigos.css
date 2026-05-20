@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Carter+One&family=Jolly+Lodger&family=Oxanium:wght@200..800&display=swap');
+*{/*reset basico*/
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(35,31,26);/*mudando a cor de fundo*/
+}
+#inimigos{
+    background-color: rgb(98,101,84);
+    padding: 50px 20px; /*mechendo no espacamento entre a nav e footer*/
+}
+#inimigos h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.conteiner-inimigos{/*mecendo nos cards e alinhando eles*/
+    display: flex;/*ativei o display do tipo flexbox*/
+    flex-wrap: wrap;/*permite quebrar a linha se n ouver espaco suficiente*/
+    gap: 30px;/*da espaco dos cards*/
+    justify-content: center;/*centraliza no eixo prncipal*/
+    align-items: stretch;/*deixa esticado ou seja do mesmo tamanho*/
+}
+.item{/*mechendo no estilo dos cards*/
+    width: 250px;
+    background-color: rgb(84,71,59);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;/*ativando o display flex*/
+    flex-direction: column;/*deixo o sentido dentro ds caixas em coluna*/
+
+}
