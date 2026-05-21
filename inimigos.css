@@ -1,35 +1,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Carter+One&family=Jolly+Lodger&family=Oxanium:wght@200..800&display=swap');
-*{/*reset basico*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Carter+One&family=Caveat+Brush&family=Jolly+Lodger&family=Oxanium:wght@200..800&family=Story+Script&display=swap');
+
+* {
+    /*reset basico*/
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
-body{
-    background-color: rgb(35,31,26);/*mudando a cor de fundo*/
+
+body {
+    background-color: rgb(35, 31, 26);
+    /*mudando a cor de fundo*/
 }
-#inimigos{
-    background-color: rgb(98,101,84);
-    padding: 50px 20px; /*mechendo no espacamento entre a nav e footer*/
+
+#inimigos {
+    background-color: rgb(98, 101, 84);
+    padding: 50px 20px;
+    /*mechendo no espacamento entre a nav e footer*/
 }
-#inimigos h2{
+
+#inimigos h2 {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 40px;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
-.conteiner-inimigos{/*mecendo nos cards e alinhando eles*/
-    display: flex;/*ativei o display do tipo flexbox*/
-    flex-wrap: wrap;/*permite quebrar a linha se n ouver espaco suficiente*/
-    gap: 30px;/*da espaco dos cards*/
-    justify-content: center;/*centraliza no eixo prncipal*/
-    align-items: stretch;/*deixa esticado ou seja do mesmo tamanho*/
+
+.conteiner-inimigos {
+    /*mecendo nos cards e alinhando eles*/
+    display: flex;
+    /*ativei o display do tipo flexbox*/
+    flex-wrap: wrap;
+    /*permite quebrar a linha se n ouver espaco suficiente*/
+    gap: 30px;
+    /*da espaco dos cards*/
+    justify-content: center;
+    /*centraliza no eixo prncipal*/
+    align-items: stretch;
+    /*deixa esticado ou seja do mesmo tamanho*/
 }
-.item{/*mechendo no estilo dos cards*/
+
+.item {
+    /*mechendo no estilo dos cards*/
     width: 250px;
-    background-color: rgb(84,71,59);
+    background-color: rgb(31, 26, 21);
     border-radius: 10px;
     padding: 20px;
-    display: flex;/*ativando o display flex*/
-    flex-direction: column;/*deixo o sentido dentro ds caixas em coluna*/
+    display: flex;
+    /*ativando o display flex*/
+    flex-direction: column;
+    /*deixo o sentido dentro ds caixas em coluna*/
+    justify-content: space-between;
+}
+.item:hover{
+    transform: translateY(-15px);
+    transition: 0.3s;
+    width: 360px;
+    height: 450px;
+    -webkit-box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(46,255,68,0), 5px 8px 15px 19px rgba(46,255,68,0); 
+box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(46,255,68,0), 5px 8px 15px 19px rgba(46,255,68,0);
+}
+.item img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
 
+.item p {
+    /*mechendo no paragrafo*/
+    color: rgb(165, 165, 165);
+    /*cor do paragrafo*/
+    font-weight: bold;
+    /*meche na largura da minha font*/
+    margin-bottom: 10px;
+    /*espaco em baixo da font*/
+}
+
+.item h3 {
+    color: aliceblue;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    justify-content: center;
+}
+.tag{
+    color: aliceblue;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+.humano{
+    background-color: rgb(114, 51, 51);
+}
+.zombie{
+    background-color: rgba(3, 153, 10, 0.705);
+
+}
+.rapido{
+    background-color: rgb(3, 59, 107);
+
+}
+.ecolocalização{
+    background-color: rgb(103, 109, 114);
+
+}
+.bomba{
+    background-color: rgb(129, 47, 0);
+
+}
+.infecsao{
+    background-color: rgb(119, 0, 0);
+
+}
+.saqueadores{
+    background-color: rgb(82, 0, 136);
+
+}
+.exercito{
+    background-color: rgb(1, 26, 0);
+
+}
+.crime{
+    background-color: rgb(0, 51, 51);
+
+}
+.salvação{
+    background-color: rgb(190, 146, 0);
+
+}
+footer{
+    color: rgb(136, 136, 136);
+    font-size: 25px;
+    transition: 0,7s;
+}
+footer:hover{
+    color: rgb(228, 228, 228);
+    box-shadow: 0 0 40px;
+    
+}
+
+/*responsivo*/
+
+@media(max-width: 600px){/*ativa o media quando a largura tiver entre 0 e 600
+px*/
+#inimigos h2{
+    font-size: 70px;
+    
+}
+.item{
+    width: 100%;
+    max-width: 400px;
+}
 }
